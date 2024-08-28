@@ -1,0 +1,9 @@
+package d0822;
+
+public class DataType2 {
+	public static void main(String[] args) {
+		//String
+		String s = "abc";
+		//Integer
+	}
+}

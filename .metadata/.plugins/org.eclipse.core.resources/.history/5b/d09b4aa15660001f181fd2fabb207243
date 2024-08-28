@@ -1,0 +1,16 @@
+package d0822;
+
+public class Calc {
+	static void add(int n1, int n2) {
+		n1 + n2;
+	}
+	static void minus(int n1, int n2) {
+		n1 - n2;
+	}
+	static void multiple(int n1, int n2) {
+		n1 * n2;
+	}
+	static void division(int n1, int n2) {
+		n1 / n2;
+	}
+}

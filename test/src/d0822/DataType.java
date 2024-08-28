@@ -1,0 +1,19 @@
+package d0822;
+
+public class DataType {
+	public static void main(String[] args) {  //<- 요거 외워
+		//기본형, 참조형
+		
+		//기본형
+		//실수 float double
+		//정수 byte short int long
+		//문자 char
+		//논리 boolean
+		
+		byte b = 1;
+		
+		//참조형
+		//기본형 아니고 다
+		
+	}
+}

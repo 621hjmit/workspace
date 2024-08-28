@@ -1,0 +1,11 @@
+package d0822;
+
+public class MethodTest {
+//메소드도 데이터 타입이 있음.	
+	void test() {
+		return ;
+	}
+	int test1() {
+		
+	}
+}

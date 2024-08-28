@@ -1,0 +1,13 @@
+package d0822;
+
+public class Condition2 {
+	public static void main(String[] args) {
+		String str = "1";
+		String str1 = "1";
+		
+		String str2 = new String("1");
+		
+		System.out.println(str == str1);
+		
+	}
+}

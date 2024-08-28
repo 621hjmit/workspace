@@ -1,0 +1,22 @@
+package d0822;
+
+public class Calc {
+	static int add(int n1, int n2) {
+		return n1 + n2;
+	}
+	static int minus(int n1, int n2) {
+		return n1 - n2;
+	}
+	static int multiple(int n1, int n2) {
+		return n1 * n2;
+	}
+	static int division(int n1, int n2) {
+		return n1 / n2;
+	}
+	public static void main(String[] args) {
+		System.out.println(add(10,5));
+		System.out.println(minus(10,5));
+		System.out.println(multiple(10,5));
+		System.out.println(division(10,5));
+	}
+}
