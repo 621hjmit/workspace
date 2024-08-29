@@ -1,3 +1,4 @@
+<%@page import="test.web.common.DBCon"%>
 <%@page import="java.sql.*"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
@@ -16,23 +17,18 @@
         <th>가입일</th>
     </tr>
 <%
-String  id ="root", 
-		pwd ="r1r2r3", 
-		url="jdbc:mariadb://localhost:3307/ezen", 
-		driverName="org.mariadb.jdbc.Driver";
-
-Class.forName(driverName);
-Connection con = DriverManager.getConnection(url, id, pwd);
+Connection con = DBCon.getCon();
 String sql = "SELECT * FROM USER_INFO";
 Statement stmt = con.createStatement();
 ResultSet rs = stmt.executeQuery(sql);
 
+
 while(rs.next()){
 	out.println("<tr>");
-	out.println("<td>" + rs.getString("UI_NUM"));
-	out.println("<td>" + rs.getString("UI_NAME"));
-	out.println("<td>" + rs.getString("UI_ID"));
-	out.println("<td>" + rs.getString("CREDAT"));
+	out.println("<td>" + rs.getString("MI_NUM")+"</td>");
+	out.println("<td><a href='/user/uview.jsp?uiNum="+rs.getString("MI_NUM")+"'>" + rs.getString("MI_NAME")+"</a></td>");
+	out.println("<td>" + rs.getString("MI_ID")+"</td>");
+	out.println("<td>" + rs.getString("CREDAT")+"</td>");
 	out.println("</tr>");
 }
 %>

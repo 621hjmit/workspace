@@ -3,10 +3,16 @@ C:\dev\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\208142257
 \web_test\src
 C:\dev\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\111466254.index
 \ooing\src\main\java
+C:\dev\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4130487252.index
+\ooing\src\main\java
+C:\dev\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2022627244.index
+\web-test\src\main\java
 C:\dev\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1443717040.index
 \web_20240827\src\main\java
 C:\dev\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2283289462.index
 \web-test\src\main\java
+C:\dev\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\963307204.index
+\lotto\src\main\java
 C:\dev\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\601490709.index
 \myself\src\main\java
 C:\dev\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\668754041.index
@@ -17,6 +23,8 @@ C:\dev\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\680484833
 \web_20240827\src\main\java
 C:\dev\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\245223603.index
 \ooing\src\main\java
+C:\dev\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2728239014.index
+\lotto\src\main\java
 C:\dev\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3313978017.index
 \web_test\src
 C:\dev\workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4019748163.index
