@@ -32,12 +32,12 @@ for (int i = 0; i < 7; i++) {
 }
 %>
     <p><%=str %></p>
-<form action="/lotto/lotto/lotto-insert-ok.jsp" method="POST">
-<% for(int i= 0; i<7;i++){
-    out.println("<input hidden type='text' name='l" + i + "' value='"+ lottomNums[i] +"'>");
-} %>
-    
-    <button>로또등록</button>
-</form>
+	<form action="/lotto/lotto-insert-ok.jsp" method="POST">
+		<% for(int i= 0; i<7;i++){
+		    out.println("<input hidden type='text' name='l" + i + "' value='"+ lottomNums[i] +"'>");
+		} %>
+		    
+	    <button>로또등록</button>
+	</form>
 </body>
 </html>

@@ -10,8 +10,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="driverName"/>
+		<item key="selection" value="frm"/>
 		<list key="findhistory">
+			<item value="frm"/>
 			<item value="driverName"/>
 		</list>
 		<list key="replacehistory">

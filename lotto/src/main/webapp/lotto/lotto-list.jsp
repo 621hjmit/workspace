@@ -44,7 +44,7 @@ while(rs.next()){
 <button onclick="insertLotto()">등록</button>
 <script>
 function insertLotto(){
-    location.href="/lotto/lotto/lotto-insert.jsp";
+    location.href="/lotto/lotto-insert.jsp";
 };
 </script>
 </body>
