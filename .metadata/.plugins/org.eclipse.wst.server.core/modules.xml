@@ -2,5 +2,6 @@
 <modules>
   <module moduleId="org.eclipse.jst.jee.server:ooing" serverId="apache-tomcat-9.0.89 at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:web-test" serverId="apache-tomcat-9.0.89 at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:web-test2-sky" serverId="apache-tomcat-9.0.89 at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:oing" serverId="Tomcat v9.0 Server at localhost"/>
 </modules>

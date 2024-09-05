@@ -1,0 +1,28 @@
+
+DROP TABLE user_info;
+
+CREATE TABLE `user_info` (
+   `UI_NUM` INT(11) NOT NULL AUTO_INCREMENT,
+   `UI_NAME` VARCHAR(20) NOT NULL COLLATE 'utf8mb4_uca1400_ai_ci',
+   `UI_ID` VARCHAR(20) NOT NULL COLLATE 'utf8mb4_uca1400_ai_ci',
+   `UI_PWD` VARCHAR(50) NOT NULL COLLATE 'utf8mb4_uca1400_ai_ci',
+   `CREDAT` CHAR(8) NOT NULL COLLATE 'utf8mb4_uca1400_ai_ci',
+   `CRETIM` CHAR(6) NOT NULL COLLATE 'utf8mb4_uca1400_ai_ci',
+   PRIMARY KEY (`UI_NUM`) USING BTREE
+)
+ENGINE=InnoDB
+;
+
+INSERT INTO user_info(UI_NAME, UI_ID, UI_PWD,CREDAT, CRETIM)
+
+VALUES('이름1','아이디1','1234','20240801','121122'),
+('이름2','아이디2','1234','20240801','111122'),
+('이름3','아이디3','1234','20240811','061122'),
+('이름4','아이디4','1234','20240814','151122'),
+('이름5','아이디5','1234','20240820','222222'),
+('이름6','아이디6','1234','20240821','050110'),
+('이름7','아이디7','1234','20240822','000101');
+
+SELECT * FROM user_info WHERE UI_NUM = 3;
+
+UPDATE user_info SET UI_NAME='이름', UI_ID='아이디' WHERE UI_NUM =1 OR UI_NUM=2;
