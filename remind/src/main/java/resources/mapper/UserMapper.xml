@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- UserMapper.xml -->
+<mapper namespace="UserMapper">
+	<select id="selectUsers" resultType="com.remind.test.vo.UserVO">
+		SELECT * FROM USER_INFO
+  		<where>
+  			<if test='uiNum!=null and uiNum!=0'>
+  				AND UI_NUM = #{uiNum}
+  			</if>
+  			<if test='uiName!=null and uiName.length > 0'>
+  				AND UI_NAME = #{uiName}
+  			</if>
+  			<if test='uiId!=null and uiId.length > 0'>
+  				AND UI_ID = #{uiId}
+  			</if>
+  		</where>
+	</select>
+	
+	<select id="loginUser" resultType="com.remind.test.vo.UserVO">
+		SELECT * FROM USER_INFO WHERE UI_ID = #{uiId} AND UI_PWD = #{uiPwd}
+	</select>
+	
+	<select id="selectUser" resultType="com.remind.test.vo.UserVO">
+		SELECT * FROM USER_INFO WHERE UI_NUM = #{uiNum}
+	</select>
+	<insert id="insertUser" parameterType="com.remind.test.vo.UserVO">
+		INSERT INTO USER_INFO (UI_NAME, UI_ID, UI_PWD) VALUES
+		(#{uiName},#{uiId},#{uiPwd})
+	</insert>
+	<update id="updateUser">
+		UPDATE USER_INFO SET UI_NAME = #{uiName}, UI_ID=#{uiId}, UI_PWD=#{uiPwd} WHERE UI_NUM = #{uiNum}
+	</update>
+	<delete id="deleteUser">
+		DELETE FROM USER_INFO WHERE UI_NUM = #{uiNum}
+	</delete>
+</mapper>

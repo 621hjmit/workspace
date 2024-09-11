@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  <!-- CarMapper.xml -->
+  <mapper namespace="CarMapper">
+  	<select id="selectCars" resultType="com.remind.test.vo.CarVO">
+  		SELECT * FROM CAR_INFO
+  		<where>
+  			<if test='ciNum!=null and ciNum!=0'>
+  				AND CI_NUM = #{ciNum}
+  			</if>
+  			<if test='ciName!=null and ciName.length > 0'>
+  				AND CI_NAME = #{ciName}
+  			</if>
+  		</where>
+  	</select>
+  	<select id="selectCar" resultType="com.remind.test.vo.CarVO">
+  		SELECT * FROM CAR_INFO WHERE CI_NUM = #{ciNum}	
+  	</select>
+  	<insert id="insertCar" parameterType="com.remind.test.vo.CarVO">
+  		INSERT INTO CAR_INFO (CI_NAME) VALUES (#{ciName})
+  	</insert>
+  	<update id="updateCar">
+  		UPDATE CAR_INFO SET CI_NAME = #{ciName} WHERE CI_NUM = #{ciNum}
+  	</update>
+  	<delete id="deleteCar">
+  		DELETE FROM CAR_INFO WHERE CI_NUM = #{ciNum}
+  	</delete>
+  </mapper>

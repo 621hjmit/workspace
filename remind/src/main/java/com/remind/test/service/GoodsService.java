@@ -1,0 +1,31 @@
+package com.remind.test.service;
+
+import java.util.*;
+
+import com.remind.test.repository.GoodsRepository;
+import com.remind.test.vo.GoodsVO;
+
+public class GoodsService {
+	private GoodsRepository gr = new GoodsRepository();
+	
+	public List<GoodsVO> getList (GoodsVO goods){
+		return gr.selectList(goods);
+	}
+	
+	public GoodsVO getGoods (int giNum) {
+		return gr.selectGoods(giNum);
+	}
+	
+	public int insertGoods(GoodsVO goods) {
+		return gr.insertGoods(goods);
+	}
+	
+	public int updateGoods(GoodsVO goods) {
+		return gr.updateGoods(goods);
+	}
+	
+	public int deleteGoods(int giNum) {
+		return gr.deleteGoods(giNum);
+	}
+	
+}
